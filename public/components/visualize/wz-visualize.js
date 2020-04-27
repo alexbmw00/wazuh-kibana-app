@@ -202,14 +202,14 @@ export class WzVisualize extends Component {
                 {(vis.id !== 'Wazuh-App-Overview-General-Agents-status' ||
                   (vis.id === 'Wazuh-App-Overview-General-Agents-status' &&
                     this.monitoringEnabled)) && (
-                    <WzReduxProvider>
-                      <KibanaVis
-                        visID={vis.id}
-                        tab={selectedTab}
-                        {...this.props}
-                      ></KibanaVis>
-                    </WzReduxProvider>
-                  )}
+                  <WzReduxProvider>
+                    <KibanaVis
+                      visID={vis.id}
+                      tab={selectedTab}
+                      {...this.props}
+                    ></KibanaVis>
+                  </WzReduxProvider>
+                )}
                 {vis.id === 'Wazuh-App-Overview-General-Agents-status' &&
                   !this.monitoringEnabled && (
                     <EuiPage style={{ background: 'transparent' }}>

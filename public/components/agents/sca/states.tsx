@@ -255,7 +255,7 @@ export class States extends Component {
         },
         {
           title: 'Rationale',
-          description: item.rationale
+          description: item.rationale,
         },
         {
           title: 'Remediation',
